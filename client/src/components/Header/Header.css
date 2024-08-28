@@ -1,0 +1,101 @@
+.header{
+    color: rgb(107 114 128 / var(--tw-text-opacity));
+    font-family: Gilroy-Medium;
+    text-decoration: inherit;
+    --tw-text-opacity: 1;
+    display : flex;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right : 80px;
+    font-weight: var(--linaria-theme_typography-weight-medium500);
+}
+.image-Logo{
+    width: 80px;
+    margin-top: 10px;
+    align-items: center;
+}
+.header-left, .header-center, .header-right {
+    flex: 1;
+    align-items: center;
+    box-sizing: border-box;
+    height: 30%;
+
+}
+.header-center{
+    display : flex;
+    align-items: center; 
+}
+.center-find{
+    display : flex;
+    border : 1px solid rgb(185, 176, 176);
+    height: 50px;
+    border-radius: 25px;
+}
+
+.text-center-left ,.text-center-center, .text-center-right , .text-center-button-find{
+    align-items: center;
+    font-size:18px ;
+    display : flex;
+    padding : 12px
+}
+.text-center-left {
+} 
+.text-center-right{
+}
+.text-center-center{
+}
+.text-center-button-find{
+    
+}
+.logo-find{
+    height: 25px;
+}
+.ngan-cach{
+    background-color: grey;
+    height: 24px;
+    width: 1px;
+    margin-left: 15px;
+}
+.header-right{
+    display : flex;
+}
+.logoGlobe{
+    margin-left: 15px;
+    width: 20px;
+    height : 20px;
+}
+.header-right-bnb{
+    display : flex;
+    margin-left: 180px;
+
+}
+.header-right-bnb-1{
+    margin-left: 20px;
+}
+.div-profile{
+    width: 90px;
+    height: 50px;
+    display : flex;
+}
+.icon-menu{
+    width : 20px;
+    margin-left: 10px;
+    padding-top: 15px ;
+
+}
+.button-pr{
+    display : flex;
+    background-color: white;
+    border: none;
+    border : 1px solid black;
+    border-radius: 25px;
+}
+.image-avatar{
+    width : 35px;
+    margin-left: 10px;
+    padding-top: 7px ;
+}
+.button-header{
+    background-color: white;
+    border: none;
+}
