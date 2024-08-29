@@ -23,7 +23,8 @@
 }
 .header-center{
     display : flex;
-    align-items: center; 
+    align-items: center;
+    margin-left: 30px; 
 }
 .center-find{
     display : flex;
@@ -89,6 +90,7 @@
     border: none;
     border : 1px solid black;
     border-radius: 25px;
+    padding-right: 15px;
 }
 .image-avatar{
     width : 35px;

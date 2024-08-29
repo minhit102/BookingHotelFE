@@ -1,18 +1,24 @@
 import "./App.css";
 import Header from "./components/Header/Header";
-/*import Login from "./page/Login/Login";
 import Home from "./components/Test/Home";
 import Blogs from "./components/Test/Blogs";
 import Contrac from "./components/Test/Contrac";
 import NoPage from "./components/Test/NoPage";
-import Layout from "./page/Layout";*/
+import IndexHome from "./page/IndexHome";
+import Login from "./page/Login/Login";
+import Register from "./page/Register/Register";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <div>
-      <Header />
-    </div>
+    <Routes>
+      <Route path="/" element={<IndexHome />}>
+        <Route index element={<Home />} />
+        <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />} />
+        <Route path="*" element={<NoPage />} />
+      </Route>
+    </Routes>
   );
 }
 

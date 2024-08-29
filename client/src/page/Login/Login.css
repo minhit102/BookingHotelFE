@@ -1,0 +1,97 @@
+.mainContainer {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    height: 100vh;
+
+  }
+  .mainContainer{
+    height: 60vh;
+    width:60vh ;
+    border-radius: 20px;
+    background-color: rgb(230, 241, 241);
+    margin:0 auto;
+    margin-top: 50px;
+  }
+  
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    align-items: center;
+    /*justify-content: center;*/
+  }
+  
+  .resultContainer,
+  .historyItem {
+    flex-direction: row;
+    display: flex;
+    width: 400px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .historyContainer {
+    flex-direction: column;
+    display: flex;
+    height: 200px;
+    align-items: center;
+    flex-grow: 5;
+    justify-content: flex-start;
+  }
+  
+  .buttonContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 260px;
+  }
+  
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .inputContainer > .errorLabel {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .inputBox {
+    height: 40px;
+    width: 300px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding-left: 8px;
+  }
+  .saveInfor{
+    margin-bottom: 10px;
+    height: 30px;
+    width: 300px;
+  }
+  .inputButton{
+    height: 40px;
+    width: 310px;
+    border: none;
+    border-radius: 10px;
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+
+  }
+  .forgotPassword{
+    margin-top: 15px;
+  }
+
+  .registerAccount{
+    margin-top: 10px;
+  }
