@@ -1,0 +1,54 @@
+.divAccountPage {
+    display: flex;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+  }
+  
+  .navAccountPage {
+    text-decoration: none;
+    display: flex;
+    gap: 45px;
+    padding: 35px 25px;
+    width: 550px;
+ 
+  }
+  
+  .accountItems  {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+    background-color: white
+  }
+  .accountItemsNow  {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+    background-color: red;
+  }
+  .containerProfile{
+    align-items: center;
+    text-align: center;
+  }
+  .buttonLogOut{
+    margin-top: 50px;
+    background-color: red;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+
+  }
+  .buttonLogOut:hover {
+    background-color: green; /* Màu nền khi di chuột qua */
+}
+
+  

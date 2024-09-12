@@ -1,20 +1,20 @@
 import "./Header.css";
-import React from "react";
+import React, { useContext } from "react";
 import imageLogo from "../../img/image.png";
 import imageLogoCv from "../../img/tải xuống.svg";
 import { Link, Outlet } from "react-router-dom";
+import { UserContext } from "../../UserContext";
 
 const Header = () => {
+  const { user } = useContext(UserContext);
+  console.log("User Header : " + user);
   return (
     <>
       <div className="header">
         <div className="header-left">
-          <a
-            className="logo-header"
-            href="https://www.youtube.com/watch?v=MpQbwtSiZ7E"
-          >
+          <Link to={"home"} className="logo-header">
             <img className="image-Logo" src={imageLogoCv} />
-          </a>
+          </Link>
         </div>
         <div className="header-center">
           <div className="center-find">
@@ -26,7 +26,7 @@ const Header = () => {
             </div>
             <div className="text-center-center">
               <button className="button-header">
-                <span>Any week</span>
+                <span>Any week 1</span>
               </button>
               <div className="ngan-cach"></div>
             </div>
@@ -61,7 +61,10 @@ const Header = () => {
           </div>
           <div className="header-right-bnb-1">
             <div className="div-profile">
-              <Link to={"login"} className="button-pr">
+              <Link
+                to={user ? "account/profile" : "login"}
+                className="button-pr"
+              >
                 <div>
                   <img
                     className="icon-menu"
@@ -76,6 +79,7 @@ const Header = () => {
                     alt="circled-user-male-skin-type-3"
                   />
                 </div>
+                {user && <Link to={"profile"}>{user.username}</Link>}
               </Link>
             </div>
           </div>
